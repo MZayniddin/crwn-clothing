@@ -69,7 +69,7 @@ const SignUpForm = () => {
           name="displayName"
           value={displayName}
         />
-        
+
         <FormInput
           label="Email"
           type="email"
