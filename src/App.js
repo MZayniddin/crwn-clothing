@@ -5,8 +5,17 @@ import Navigation from "./routes/navigation/navigation.component";
 import Authentication from "./routes/authentication/authentication.component";
 import Shop from "./routes/shop/shop.component";
 import Checkout from "./routes/checkout/checkout.component";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { getCurrentUser } from "./utils/firebase/firebase.utils";
 
 const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    getCurrentUser().then((user) => console.log(user));
+  });
+
   return (
     <Routes>
       <Route path="/" element={<Navigation />}>
