@@ -5,7 +5,7 @@ import { selectCartItems } from "../../store/cart/cart.selector";
 import {
   addItemToCart,
   clearItemFromCart,
-  removeItemToCart,
+  removeItemFromCart,
 } from "../../store/cart/cart.action";
 
 import {
@@ -28,7 +28,7 @@ const CheckoutItem = ({ cartItem }) => {
     dispatch(clearItemFromCart(cartItems, cartItem));
   const addItemHandler = () => dispatch(addItemToCart(cartItems, cartItem));
   const removeItemHandler = () =>
-    dispatch(removeItemToCart(cartItems, cartItem));
+    dispatch(removeItemFromCart(cartItems, cartItem));
 
   return (
     <CheckoutItemContainer>
