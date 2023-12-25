@@ -73,6 +73,6 @@
   "devDependencies": {
     "@types/redux-logger": "^3.0.9",
     "babel-plugin-macros": "^3.1.0",
-    "jest": "^29.7.0"
+    "jest": "24.9.0"
   }
 }
